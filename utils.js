@@ -8,8 +8,8 @@ export function renderBook(books) {
     const h1 = document.createElement('h1');
     h1.textContent = books.series;
 
-    const h2 = document.createElement('h2');
-    h2.textContent = books.series;
+    // const h2 = document.createElement('h2');
+    // h2.textContent = books.series;
 
     const img = document.createElement('img');
     img.src = books.img;
@@ -22,5 +22,24 @@ export function renderBook(books) {
 
 }
 
+
+//Starwars
+
+export function renderMovie(movies) {
+    const div = document.createElement('div');
+    div.classList.add('movie');
+
+    const img = document.createElement('img');
+    img.src = movies.img;
+
+    const h1 = document.createElement('h1');
+    h1.textContent = movies.series;
+
+    const p = document.createElement('p');
+    p.textContent = `Of the greatest stories ever brought to film, ${movies.name} was the ${movies.number} installment of the original trilogy released in ${movies.year}.`;
+
+    div.append(img, h1, p);
+    return div;
+}
     
 
