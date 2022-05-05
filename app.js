@@ -7,3 +7,11 @@ import { renderBook } from './utili.js';
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+ 
+
+function renderBook(books){
+    const book = renderBook();
+  for(let books of book);
+  return books;
+};
