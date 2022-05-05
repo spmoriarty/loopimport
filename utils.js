@@ -17,7 +17,7 @@ export function renderBook(books) {
     const p = document.createElement('p');
     p.textContent = `${books.name} is part ${books.part} of a ${books.number} book series with the book being published in ${books.year}.`;
 
-    div.append(h1, h2, img, p);
+    div.append(h1, img, p);
     return div;
 
 }

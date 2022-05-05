@@ -10,7 +10,10 @@ import { renderBook } from './utils.js';
 
 const bookListEl = document.getElementById('book');
 
-for (let book of books) {
-    const bookDiv = renderBook(book);
-    bookDiv.append(bookListEl);
-}
+function listOfBooks() {
+    for (let book of books) {
+        const bookDiv = renderBook(book);
+        bookListEl.append(bookDiv);
+    }}
+
+listOfBooks();
