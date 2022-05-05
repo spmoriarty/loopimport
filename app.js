@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import { books } from './books.js';
-import { renderBook } from './utili.js';
+import { renderBook } from './utils.js';
 // let state
 
 // set event listeners 
@@ -8,10 +8,9 @@ import { renderBook } from './utili.js';
   // use user input to update state 
   // update DOM to reflect the new state
 
- 
+const bookListEl = document.getElementById('book');
 
-function renderBook(books){
-    const book = renderBook();
-  for(let books of book);
-  return books;
-};
+for (let book of books) {
+    const bookDiv = renderBook(book);
+    bookDiv.append(bookListEl);
+}
