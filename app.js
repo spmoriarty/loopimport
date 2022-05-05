@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { books } from './books.js';
+import { renderBook } from './utili.js';
 // let state
 
 // set event listeners 
