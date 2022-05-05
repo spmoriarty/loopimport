@@ -110,3 +110,25 @@ width: 100%;
 border-radius: 50%;
 border: 2.5px solid green;
 }
+
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie {
+   
+    display: flex;
+    flex-direction: column;
+    align-itmes: center;
+    border: 10px solid red;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.movie img {
+    width: 50%;
+    height: 50%;
+    border-radius: 30%;
+    border: 5px solid black;
+}
