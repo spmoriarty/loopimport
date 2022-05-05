@@ -1,18 +1,12 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { books } from '../books.js';
+import { renderBook } from '../utils.js';
 
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+    const expected = '<div class="book"><h1>The Lord of the Rings</h1><h2>The Lord of the Rings</h2><img src="./assets/LOTR1"><p>The fellowship of the ring is part 1 of a 3 book series with the book being published in 1954.</p></div>';
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    const actual = renderBook(books[0]);
+
+    expect.equal(actual.outerHTML, expected);
 });
