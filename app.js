@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import {'books'} from './books.js';
+import { books } from './books.js';
 // let state
 
 // set event listeners 
