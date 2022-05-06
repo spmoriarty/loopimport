@@ -23,10 +23,10 @@ listOfBooks();
 const movieListEL = document.getElementById('movies');
 
 function listOfMovies() {
-  for (let movie of movies) {
-    const movieDiv = renderMovie(movie);
-    movieListEL.append(movieDiv);
+    for (let movie of movies) {
+        const movieDiv = renderMovie(movie);
+        movieListEL.append(movieDiv);
 
-  }}
+    }}
 
-  listOfMovies();
+listOfMovies();
