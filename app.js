@@ -33,7 +33,7 @@ function listOfMovies() {
 
 listOfMovies();
 
-const goatListEl = document.getElementById('the-goat');
+const goatListEl = document.getElementById('GOAT');
 // fix naming convention
 function listOfGoat() {
     for (let GOAT of goats) {
