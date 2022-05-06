@@ -29,7 +29,7 @@ test2('time to test movies', (expect) => {
 const test3 = QUnit.test;
 
 test3('whose the goat?', (expect) => {
-    const expected = '<div class="the-goat"><h1>The Greatest of all time</h1><img src="./assets/pig"><p>Nicolas Cage is demonstrably the greatest actor in over 100 years. Here is an example of the GOAT in his element is with the movie Pig, where he masters the art of concern, as shown in this picture.</p></div>';
+    const expected = '<div class="goat"><h1>The Greatest of all time</h1><p>Nicolas Cage is demonstrably the greatest actor in over 100 years. Here is an example of the GOAT in his element is with the movie Pig, where he masters the art of concern, as shown in this picture.</p></div>';
 
     const actual = renderCage(goat[0]);
 
