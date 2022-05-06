@@ -2,7 +2,7 @@ import { books } from '../books.js';
 import { renderBook } from '../utils.js';
 import { renderMovie } from '../utils.js';
 import { movies } from '../movies.js';
-import { goat } from './GOAT.js';
+import { goats } from './GOAT.js';
 import { renderCage } from '../utils.js';
 
 const test = QUnit.test;
