@@ -113,14 +113,14 @@ border: 2.5px solid green;
 
 .second {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .movie {
    
     display: flex;
     flex-direction: column;
-    align-itmes: center;
+    align-items: center;
     border: 10px solid red;
     padding: 15px;
     border-radius: 5px;

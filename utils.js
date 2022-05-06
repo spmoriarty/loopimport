@@ -41,5 +41,24 @@ export function renderMovie(movies) {
     div.append(img, h1, p);
     return div;
 }
+
+//The GOAT
+
+export function renderCage(GOAT) {
+    const div = document.createElement('div');
+    div.classList.add('goat');
+
+    const img = document.createElement('img');
+    img.src = GOAT.img;
+
+    const h1 = document.createElement('h1');
+    h1.textContent = GOAT.who;
+
+    const p = document.createElement('p');
+    p.textContent = `Nicolas Cage is demonstrably the greatest actor in over 100 years. Here is an example of the GOAT in his element is with the ${GOAT.movie}, where he masters the art of ${GOAT.emotion}, as shown in this picture.`;
+
+    div.append(img, h1, p);
+    return div;
+}
     
 
