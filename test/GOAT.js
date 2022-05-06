@@ -1,4 +1,4 @@
-export const goat = [
+export const goats = [
     {
         who: 'The Greatest of all time',
         movie: 'Pig',

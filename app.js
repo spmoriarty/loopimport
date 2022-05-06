@@ -3,6 +3,8 @@ import { books } from './books.js';
 import { renderBook } from './utils.js';
 import { movies } from './movies.js';
 import { renderMovie } from './utils.js';
+import { goats } from './test/GOAT.js';
+import { renderCage } from './utils.js';
 // let state
 
 // set event listeners 
@@ -30,3 +32,13 @@ function listOfMovies() {
     }}
 
 listOfMovies();
+
+const goatListEl = document.getElementById('the-goat');
+// fix naming convention
+function listOfGoat() {
+    for (let GOAT of goats) {
+        const goatDiv = renderCage(GOAT);
+        goatListEl.append(goatDiv);
+    }}
+
+listOfGoat();
